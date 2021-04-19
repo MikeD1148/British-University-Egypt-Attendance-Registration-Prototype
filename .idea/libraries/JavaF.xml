@@ -2,7 +2,6 @@
   <library name="JavaF">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/../../../../Developer Applications/Packages/openjfx-16_windows-x64_bin-sdk/javafx-sdk-16/lib" />
-      <root url="jar://$PROJECT_DIR$/../../../../Developer Applications/Packages/sqlite-jdbc-3.32.3.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
