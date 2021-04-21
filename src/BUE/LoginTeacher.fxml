@@ -7,9 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.LoginStudentController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.LoginTeacherController">
    <children>
-      <Label layoutX="139.0" layoutY="60.0" text="Login Teacher">
+      <Label layoutX="152.0" layoutY="56.0" text="Login Teacher">
          <font>
             <Font size="52.0" />
          </font>
