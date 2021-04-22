@@ -32,6 +32,19 @@ public class LoginTeacherController {
     @FXML
     private Button loginButton;
 
+    public void createTeacherMain () {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
+            Stage stage = new Stage();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 600, 400));
+            stage.show();
+        }catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
     public void cancelButtonOnAction (ActionEvent event){
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
@@ -77,7 +90,7 @@ public class LoginTeacherController {
                 try {
                     Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
                     Stage stage = (Stage) cancelButton.getScene().getWindow();
-                    stage.setTitle("Teacher Main Page");
+                    stage.setTitle("Hello World");
                     stage.setScene(new Scene(root, 600, 400));
                     stage.show();
                 } catch (Exception e) {

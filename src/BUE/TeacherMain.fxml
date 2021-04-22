@@ -7,7 +7,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherMainController">
    <children>
       <Ellipse fill="WHITE" layoutX="149.0" layoutY="136.0" radiusX="116.0" radiusY="54.0" stroke="BLACK" strokeType="INSIDE" />
@@ -31,6 +30,6 @@
          </font>
       </Text>
       <Button fx:id="ButtonLecture4" layoutX="60.0" layoutY="408.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="9:00AM Chemistry C2" textOverrun="WORD_ELLIPSIS" />
-      <Button fx:id="ButtonTeacherMainLogout" layoutX="528.0" layoutY="25.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #bababa;" text="Logout" />
+      <Button fx:id="ButtonTeacherMainLogout" layoutX="528.0" layoutY="25.0" mnemonicParsing="false" onAction="#ButtonTeacherMainLogoutOnAction" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #bababa;" text="Logout" />
    </children>
 </AnchorPane>
