@@ -37,7 +37,7 @@ public class LoginTeacherController {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Hello World");
-            stage.setScene(new Scene(root, 600, 400));
+            stage.setScene(new Scene(root, 660, 469));
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
@@ -91,7 +91,7 @@ public class LoginTeacherController {
                     Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
                     Stage stage = (Stage) cancelButton.getScene().getWindow();
                     stage.setTitle("Hello World");
-                    stage.setScene(new Scene(root, 600, 400));
+                    stage.setScene(new Scene(root, 660, 469));
                     stage.show();
                 } catch (Exception e) {
                     e.printStackTrace();

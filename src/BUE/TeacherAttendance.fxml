@@ -15,12 +15,12 @@
          </image>
       </ImageView>
       <Label layoutX="242.0" layoutY="223.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: white;" text="  Monday: 8:00AM Chemistry B2" />
-      <Button layoutX="555.0" layoutY="407.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
+      <Button fx:id="ButtonTeacherBack" layoutX="555.0" layoutY="407.0" mnemonicParsing="false" onAction="#TeacherBackOnAction" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button layoutX="14.0" layoutY="416.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: white;" text="Export As PDF">
+      <Button fx:id="ButtonTeacherExportPDF" layoutX="14.0" layoutY="416.0" mnemonicParsing="false" onAction="#TeacherExportOnAction" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: white;" text="Export As PDF">
          <font>
             <Font size="14.0" />
          </font>

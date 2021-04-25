@@ -8,17 +8,17 @@
 
 <AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherExportController">
    <children>
-      <TextField layoutX="298.0" layoutY="148.0" prefHeight="34.0" prefWidth="172.0" />
+      <TextField layoutX="245.0" layoutY="149.0" prefHeight="34.0" prefWidth="192.0" />
       <Label layoutX="191.0" layoutY="27.0" text="Export As PDF">
          <font>
             <Font size="45.0" />
          </font>
       </Label>
-      <Label layoutX="237.0" layoutY="155.0" prefHeight="21.0" prefWidth="55.0" text="Save As:">
+      <Label layoutX="191.0" layoutY="155.0" prefHeight="21.0" prefWidth="55.0" text="Save As:">
          <font>
             <Font size="13.0" />
          </font>
       </Label>
-      <Button layoutX="305.0" layoutY="235.0" mnemonicParsing="false" text="Save" />
+      <Button fx:id="SavePDF" layoutX="310.0" layoutY="210.0" mnemonicParsing="false" onAction="#SavePDFOnAction" text="Save" />
    </children>
 </AnchorPane>
