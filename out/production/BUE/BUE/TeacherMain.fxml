@@ -21,15 +21,15 @@
             <Font name="Ebrima" size="22.0" />
          </font>
       </Text>
-      <Button fx:id="ButtonLecture1" layoutX="60.0" layoutY="235.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="8:00AM Chemistry B2" textOverrun="WORD_ELLIPSIS" />
-      <Button fx:id="ButtonLecture2" layoutX="61.0" layoutY="285.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="11:00AM Chemistry C1" textOverrun="WORD_ELLIPSIS" />
-      <Button fx:id="ButtonLecture3" layoutX="60.0" layoutY="335.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="14:30PM Mentoring M1" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="ButtonLecture1" layoutX="60.0" layoutY="235.0" mnemonicParsing="false" onAction="#ButtonLecture1OnAction" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="8:00AM Chemistry B2" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="ButtonLecture2" layoutX="61.0" layoutY="285.0" mnemonicParsing="false" onAction="#ButtonLecture2OnAction" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="11:00AM Chemistry C1" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="ButtonLecture3" layoutX="60.0" layoutY="335.0" mnemonicParsing="false" onAction="#ButtonLecture3OnAction" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="14:30PM Mentoring M1" textOverrun="WORD_ELLIPSIS" />
       <Text layoutX="39.0" layoutY="393.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tuesday:">
          <font>
             <Font name="Ebrima" size="22.0" />
          </font>
       </Text>
-      <Button fx:id="ButtonLecture4" layoutX="60.0" layoutY="408.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="9:00AM Chemistry C2" textOverrun="WORD_ELLIPSIS" />
+      <Button fx:id="ButtonLecture4" layoutX="60.0" layoutY="408.0" mnemonicParsing="false" onAction="#ButtonLecture4OnAction" prefHeight="34.0" prefWidth="178.0" style="-fx-background-color: #e8e8e8;" text="9:00AM Chemistry C2" textOverrun="WORD_ELLIPSIS" />
       <Button fx:id="ButtonTeacherMainLogout" layoutX="528.0" layoutY="25.0" mnemonicParsing="false" onAction="#ButtonTeacherMainLogoutOnAction" prefHeight="44.0" prefWidth="100.0" style="-fx-background-color: #bababa;" text="Logout" />
    </children>
 </AnchorPane>
