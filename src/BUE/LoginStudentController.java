@@ -31,6 +31,8 @@ public class LoginStudentController {
     private PasswordField passwordTextField;
     @FXML
     private Button loginButton;
+    @FXML
+    private Button ButtonBack;
 
     public void createStudentMain () {
         try {
@@ -104,4 +106,20 @@ public class LoginStudentController {
             System.out.println("Fail!");
         }
     }
+
+    public void ButtonBackOnAction(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+            Stage stage = (Stage) ButtonBack.getScene().getWindow();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
+
 }

@@ -9,11 +9,6 @@
 
 <AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherAttendanceController">
    <children>
-      <ImageView fitHeight="230.0" fitWidth="631.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@BUEPictures/Attendance.png" />
-         </image>
-      </ImageView>
       <Label layoutX="242.0" layoutY="223.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: white;" text="  Monday: 8:00AM Chemistry B2" />
       <Button fx:id="ButtonTeacherBack" layoutX="555.0" layoutY="407.0" mnemonicParsing="false" onAction="#TeacherBackOnAction" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
          <font>
@@ -25,5 +20,18 @@
             <Font size="14.0" />
          </font>
       </Button>
+      <ImageView fitHeight="184.0" fitWidth="553.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BUEPictures/Attendance.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="ButtonChange" layoutX="555.0" layoutY="110.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange1" layoutX="555.0" layoutY="130.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange2" layoutX="555.0" layoutY="148.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange3" layoutX="555.0" layoutY="166.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange4" layoutX="555.0" layoutY="93.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange5" layoutX="555.0" layoutY="75.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange6" layoutX="555.0" layoutY="57.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
+      <Button fx:id="ButtonChange7" layoutX="555.0" layoutY="37.0" minHeight="10.0" minWidth="10.0" mnemonicParsing="false" onAction="#ButtonChangeOnAction" prefHeight="1.0" prefWidth="10.0" style="-fx-background-color: red;" text="Button" />
    </children>
 </AnchorPane>

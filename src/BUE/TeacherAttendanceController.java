@@ -27,6 +27,23 @@ public class TeacherAttendanceController {
     private Button ButtonTeacherExportPDF;
     @FXML
     private Button ButtonTeacherBack;
+    @FXML
+    private Button ButtonChange;
+    @FXML
+    private Button ButtonChange1;
+    @FXML
+    private Button ButtonChange2;
+    @FXML
+    private Button ButtonChange3;
+    @FXML
+    private Button ButtonChange4;
+    @FXML
+    private Button ButtonChange5;
+    @FXML
+    private Button ButtonChange6;
+    @FXML
+    private Button ButtonChange7;
+
 
 
     public void TeacherExportOnAction(ActionEvent event) {
@@ -54,6 +71,21 @@ public class TeacherAttendanceController {
             e.getCause();
         }
     }
+
+    public void ButtonChangeOnAction(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherAttendanceChange.fxml"));
+            Stage stage = (Stage) ButtonChange.getScene().getWindow();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
 
 
 

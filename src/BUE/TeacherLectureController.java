@@ -31,6 +31,8 @@ public class TeacherLectureController {
     private Button ButtonTeacherNotifyStudents;
     @FXML
     private Label TeacherNotifyStudentsMessage;
+    @FXML
+    private Button ButtonTeacherLectureQRCode;
 
     public void TeacherViewAttendanceOnAction(ActionEvent event) {
         try {
@@ -62,7 +64,19 @@ public class TeacherLectureController {
         TeacherNotifyStudentsMessage.setText("DONE!");
         TeacherNotifyStudentsMessage.setStyle("-fx-background-color: white");
 
+    }
 
+    public void ButtonTeacherLectureQRCodeOnAction (ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherQRGenerate.fxml"));
+            Stage stage = (Stage) ButtonTeacherLectureQRCode.getScene().getWindow();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
     }
 
 
