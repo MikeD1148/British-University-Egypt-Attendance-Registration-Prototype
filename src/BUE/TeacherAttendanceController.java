@@ -73,7 +73,7 @@ public class TeacherAttendanceController implements Initializable {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Absent.fxml"));
             Stage stage = (Stage) absentButton.getScene().getWindow();
-            stage.setTitle("Hello World");
+            stage.setTitle("Attendance");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -86,7 +86,7 @@ public class TeacherAttendanceController implements Initializable {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("Present.fxml"));
             Stage stage = (Stage) presentButton.getScene().getWindow();
-            stage.setTitle("Hello World");
+            stage.setTitle("Attendance");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

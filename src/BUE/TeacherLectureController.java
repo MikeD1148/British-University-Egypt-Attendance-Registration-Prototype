@@ -31,12 +31,14 @@ public class TeacherLectureController {
     private Button ButtonTeacherNotifyStudents;
     @FXML
     private Label TeacherNotifyStudentsMessage;
+    @FXML
+    private Button QRGenerateButton;
 
     public void TeacherViewAttendanceOnAction(ActionEvent event) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherAttendance.fxml"));
             Stage stage = (Stage) ButtonTeacherViewAttendance.getScene().getWindow();
-            stage.setTitle("Hello World");
+            stage.setTitle("Attendance");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -49,7 +51,7 @@ public class TeacherLectureController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
             Stage stage = (Stage) ButtonTeacherLectureBack.getScene().getWindow();
-            stage.setTitle("Hello World");
+            stage.setTitle("Teacher Main");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -63,6 +65,19 @@ public class TeacherLectureController {
         TeacherNotifyStudentsMessage.setStyle("-fx-background-color: white");
 
 
+    }
+
+    public void GenerateQROnAction(ActionEvent event) {
+        try{
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherQRGenerate.fxml"));
+            Stage stage = (Stage) QRGenerateButton.getScene().getWindow();
+            stage.setTitle("QR Generator");
+            stage.setScene((new Scene(root,660,469)));
+            stage.show();
+        } catch (Exception e){
+            e.printStackTrace();
+            e.getCause();
+        }
     }
 
 
