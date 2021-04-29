@@ -38,6 +38,8 @@ public class TeacherAttendanceController implements Initializable {
     private TextField studentName;
     @FXML
     private Text errorMessage;
+    @FXML
+    private Button BackButton;
 
     private String absent = "Absent";
     private String present = "Present";
@@ -90,6 +92,18 @@ public class TeacherAttendanceController implements Initializable {
         } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
+        }
+    }
+
+    public void BackButton (ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
+            Stage stage = (Stage) BackButton.getScene().getWindow();
+            stage.setTitle("Lecture Main");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Fail");
         }
     }
 }

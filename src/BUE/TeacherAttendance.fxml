@@ -12,7 +12,7 @@
 <AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherAttendanceController">
    <children>
       <Label layoutX="424.0" layoutY="224.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: white;" text="  Monday: 8:00AM Chemistry B2" />
-      <Button layoutX="555.0" layoutY="407.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
+      <Button fx:id="BackButton" layoutX="555.0" layoutY="407.0" mnemonicParsing="false" onAction="#BackButton" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
          <font>
             <Font size="24.0" />
          </font>

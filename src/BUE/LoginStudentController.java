@@ -13,6 +13,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
+
 import java.io.File;
 import java.net.URL;
 import java.sql.*;
@@ -31,13 +32,15 @@ public class LoginStudentController {
     private PasswordField passwordTextField;
     @FXML
     private Button loginButton;
+    @FXML
+    private Button BackButton;
 
     public void createStudentMain () {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Hello World");
-            stage.setScene(new Scene(root, 600, 400));
+            stage.setScene(new Scene(root, 660, 469));
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
@@ -89,9 +92,9 @@ public class LoginStudentController {
             if (email.equals(DBEmail) && password.equals(DBPassword)) {
                 try {
                     Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
-                    Stage stage = (Stage) cancelButton.getScene().getWindow();
+                    Stage stage = (Stage) BackButton.getScene().getWindow();
                     stage.setTitle("Hello World");
-                    stage.setScene(new Scene(root, 600, 400));
+                    stage.setScene(new Scene(root, 660, 469));
                     stage.show();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -102,6 +105,18 @@ public class LoginStudentController {
             }
         } catch (SQLException e) {
             System.out.println("Fail!");
+        }
+    }
+
+    public void BackButton (ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("LoginScreen.fxml"));
+            Stage stage = (Stage) BackButton.getScene().getWindow();
+            stage.setTitle("Student Login");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Fail");
         }
     }
 }

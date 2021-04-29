@@ -1,29 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.ColumnConstraints?>
-<?import javafx.scene.layout.GridPane?>
-<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="BUE.LoginScreenController">
-   <columnConstraints>
-      <ColumnConstraints />
-   </columnConstraints>
-   <rowConstraints>
-      <RowConstraints />
-   </rowConstraints>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.LoginScreenController">
    <children>
-      <AnchorPane prefHeight="423.0" prefWidth="447.0">
-         <children>
-            <Label layoutX="121.0" layoutY="48.0" text="LoginScreen">
-               <font>
-                  <Font size="46.0" />
-               </font>
-            </Label>
-         </children>
-      </AnchorPane>
+      <Label layoutX="227.0" layoutY="64.0" text="BUE Login">
+         <font>
+            <Font size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="StudentLogin" layoutX="226.0" layoutY="192.0" mnemonicParsing="false" onAction="#StudentLogin" prefHeight="25.0" prefWidth="209.0" text="Student Login" />
+      <Button fx:id="StaffLogin" layoutX="226.0" layoutY="244.0" mnemonicParsing="false" onAction="#StaffLogin" prefHeight="25.0" prefWidth="209.0" text="Staff Login" />
+      <Button fx:id="ExitButton" layoutX="271.0" layoutY="294.0" mnemonicParsing="false" onAction="#ExitButton" prefHeight="25.0" prefWidth="118.0" text="Exit" />
    </children>
-</GridPane>
+</AnchorPane>
