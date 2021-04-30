@@ -6,9 +6,15 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherQRGenerateController">
+<AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherQRGenerateController">
    <children>
+      <ImageView fitHeight="469.0" fitWidth="660.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="https://i.imgur.com/2cSteUQ.jpg" />
+         </image>
+      </ImageView>
       <Label layoutX="14.0" layoutY="14.0" prefHeight="75.0" prefWidth="205.0" style="-fx-background-color: white;" text="    Code Expires in 15 Minutes!">
          <font>
             <Font size="14.0" />
@@ -24,5 +30,10 @@
             <Font size="25.0" />
          </font>
       </Button>
+      <Text layoutX="14.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="British University Egypt" wrappingWidth="100.13671875">
+         <font>
+            <Font name="Bodoni MT" size="12.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>
