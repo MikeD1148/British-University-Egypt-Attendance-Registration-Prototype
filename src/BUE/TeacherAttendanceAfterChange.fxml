@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherAttendanceAfterChangeController">
+   <children>
+      <Label layoutX="242.0" layoutY="223.0" prefHeight="61.0" prefWidth="176.0" style="-fx-background-color: white;" text="  Monday: 8:00AM Chemistry B2" />
+      <Button fx:id="ButtonTeacherBack" layoutX="555.0" layoutY="407.0" mnemonicParsing="false" onAction="#TeacherBackOnAction" prefHeight="48.0" prefWidth="90.0" style="-fx-background-color: white;" text="Back">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ButtonTeacherExportPDF" layoutX="14.0" layoutY="416.0" mnemonicParsing="false" onAction="#TeacherExportOnAction" prefHeight="42.0" prefWidth="115.0" style="-fx-background-color: white;" text="Export As PDF">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="180.0" fitWidth="594.0" layoutX="22.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@BUEPictures/AttendanceAfterChange.PNG" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

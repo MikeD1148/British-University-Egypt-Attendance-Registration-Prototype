@@ -19,7 +19,7 @@
             <Image url="@BUEPictures/QRCode.png" />
          </image>
       </ImageView>
-      <Button layoutX="506.0" layoutY="14.0" mnemonicParsing="false" prefHeight="63.0" prefWidth="117.0" style="-fx-background-color: white;" text="Finish">
+      <Button fx:id="ButtonFinish" layoutX="506.0" layoutY="14.0" mnemonicParsing="false" onAction="#ButtonFinishOnAction" prefHeight="63.0" prefWidth="117.0" style="-fx-background-color: white;" text="Finish">
          <font>
             <Font size="25.0" />
          </font>

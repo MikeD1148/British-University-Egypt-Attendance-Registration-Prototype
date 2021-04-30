@@ -1,79 +1,56 @@
 package BUE;
 
-import javafx.beans.Observable;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.text.Text;
+import javafx.scene.layout.Background;
 import javafx.stage.Stage;
+import javafx.event.ActionEvent;
 
 import javax.swing.*;
+import java.io.File;
 import java.net.URL;
+import java.sql.*;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
-public class TeacherAttendanceController implements Initializable {
-    @FXML
-    private TableView<Student> tableView;
-    @FXML
-    private TableColumn<Student, String> studentNameColumn;
-    @FXML
-    private TableColumn<Student, String> notesColumn;
-    @FXML
-    private TableColumn<Student, String> statusColumn;
-    @FXML
-    private Button presentButton;
-    @FXML
-    private Button absentButton;
-    @FXML
-    private TextField studentName;
-    @FXML
-    private Text errorMessage;
-    @FXML
-    private Button BackButton;
+public class TeacherAttendanceController {
 
-    private String absent = "Absent";
-    private String present = "Present";
+    @FXML
+    private Button ButtonTeacherExportPDF;
+    @FXML
+    private Button ButtonTeacherBack;
+    @FXML
+    private Button ButtonChange;
+    @FXML
+    private Button ButtonChange1;
+    @FXML
+    private Button ButtonChange2;
+    @FXML
+    private Button ButtonChange3;
+    @FXML
+    private Button ButtonChange4;
+    @FXML
+    private Button ButtonChange5;
+    @FXML
+    private Button ButtonChange6;
+    @FXML
+    private Button ButtonChange7;
 
-    public static void CreateStudent(){
 
-    }
 
-    @Override
-    public void initialize(URL url, ResourceBundle resourceBundle) {
-        //Sets up the columns in the table
-        studentNameColumn.setCellValueFactory(new PropertyValueFactory<Student, String>("StudentName"));
-        notesColumn.setCellValueFactory(new PropertyValueFactory<Student, String>("Notes"));
-        statusColumn.setCellValueFactory(new PropertyValueFactory<Student, String>("Status"));
-
-        //Loads data
-        tableView.setItems(getStudent());
-        tableView.setEditable(true);
-    }
-
-    public ObservableList<Student> getStudent() {
-        ObservableList <Student> student = FXCollections.observableArrayList();
-        student.add(new Student("Oliver", "18:15", present));
-        student.add(new Student("Michael", "18:15", present));
-        student.add(new Student("James", "18:15", absent));
-
-        return student;
-    }
-
-    public void onAbsentButtonAction(ActionEvent event) {
+    public void TeacherExportOnAction(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("Absent.fxml"));
-            Stage stage = (Stage) absentButton.getScene().getWindow();
-            stage.setTitle("Attendance");
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherExport.fxml"));
+            Stage stage = (Stage) ButtonTeacherExportPDF.getScene().getWindow();
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -82,28 +59,37 @@ public class TeacherAttendanceController implements Initializable {
         }
     }
 
-    public void onPresentButtonAction(ActionEvent event) {
-        try {
-            Parent root = FXMLLoader.load(getClass().getResource("Present.fxml"));
-            Stage stage = (Stage) presentButton.getScene().getWindow();
-            stage.setTitle("Attendance");
-            stage.setScene(new Scene(root, 660, 469));
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-            e.getCause();
-        }
-    }
-
-    public void BackButton (ActionEvent event) {
+    public void TeacherBackOnAction(ActionEvent event) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
-            Stage stage = (Stage) BackButton.getScene().getWindow();
-            stage.setTitle("Lecture Main");
+            Stage stage = (Stage) ButtonTeacherBack.getScene().getWindow();
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
-            System.out.println("Fail");
+            e.printStackTrace();
+            e.getCause();
         }
     }
+
+    public void ButtonChangeOnAction(ActionEvent event) {
+        try {
+            Parent root = FXMLLoader.load(getClass().getResource("TeacherAttendanceChange.fxml"));
+            Stage stage = (Stage) ButtonChange.getScene().getWindow();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 660, 469));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
+
+
+
+
+
+
 }

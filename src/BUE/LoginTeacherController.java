@@ -32,7 +32,7 @@ public class LoginTeacherController {
     @FXML
     private Button loginButton;
     @FXML
-    private Button BackButton;
+    private Button ButtonBack;
 
     public void createTeacherMain () {
         try {
@@ -91,8 +91,8 @@ public class LoginTeacherController {
             if (email.equals(DBEmail) && password.equals(DBPassword)) {
                 try {
                     Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
-                    Stage stage = (Stage) BackButton.getScene().getWindow();
-                    stage.setTitle("Teacher Main");
+                    Stage stage = (Stage) cancelButton.getScene().getWindow();
+                    stage.setTitle("Hello World");
                     stage.setScene(new Scene(root, 660, 469));
                     stage.show();
                 } catch (Exception e) {
@@ -105,17 +105,25 @@ public class LoginTeacherController {
         } catch (SQLException e) {
             System.out.println("Fail!");
         }
+   
     }
 
-    public void BackButton (ActionEvent event) {
+    public void ButtonBackOnAction(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("LoginScreen.fxml"));
-            Stage stage = (Stage) BackButton.getScene().getWindow();
-            stage.setTitle("Login");
+            Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+            Stage stage = (Stage) ButtonBack.getScene().getWindow();
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
-            System.out.println("Fail");
+            e.printStackTrace();
+            e.getCause();
         }
     }
+
+
+
+
+
+
 }

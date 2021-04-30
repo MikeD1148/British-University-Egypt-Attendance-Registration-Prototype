@@ -32,13 +32,13 @@ public class TeacherLectureController {
     @FXML
     private Label TeacherNotifyStudentsMessage;
     @FXML
-    private Button QRGenerateButton;
+    private Button ButtonTeacherLectureQRCode;
 
     public void TeacherViewAttendanceOnAction(ActionEvent event) {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherAttendance.fxml"));
             Stage stage = (Stage) ButtonTeacherViewAttendance.getScene().getWindow();
-            stage.setTitle("Attendance");
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -51,7 +51,7 @@ public class TeacherLectureController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
             Stage stage = (Stage) ButtonTeacherLectureBack.getScene().getWindow();
-            stage.setTitle("Teacher Main");
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -64,17 +64,16 @@ public class TeacherLectureController {
         TeacherNotifyStudentsMessage.setText("DONE!");
         TeacherNotifyStudentsMessage.setStyle("-fx-background-color: white");
 
-
     }
 
-    public void GenerateQROnAction(ActionEvent event) {
-        try{
+    public void ButtonTeacherLectureQRCodeOnAction (ActionEvent event) {
+        try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherQRGenerate.fxml"));
-            Stage stage = (Stage) QRGenerateButton.getScene().getWindow();
-            stage.setTitle("QR Generator");
-            stage.setScene((new Scene(root,660,469)));
+            Stage stage = (Stage) ButtonTeacherLectureQRCode.getScene().getWindow();
+            stage.setTitle("Hello World");
+            stage.setScene(new Scene(root, 660, 469));
             stage.show();
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
             e.getCause();
         }

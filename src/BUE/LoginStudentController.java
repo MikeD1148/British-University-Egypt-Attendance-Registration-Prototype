@@ -13,7 +13,6 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
 
-
 import java.io.File;
 import java.net.URL;
 import java.sql.*;
@@ -33,14 +32,14 @@ public class LoginStudentController {
     @FXML
     private Button loginButton;
     @FXML
-    private Button BackButton;
+    private Button ButtonBack;
 
     public void createStudentMain () {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Hello World");
-            stage.setScene(new Scene(root, 660, 469));
+            stage.setScene(new Scene(root, 600, 400));
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
@@ -92,9 +91,9 @@ public class LoginStudentController {
             if (email.equals(DBEmail) && password.equals(DBPassword)) {
                 try {
                     Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
-                    Stage stage = (Stage) BackButton.getScene().getWindow();
+                    Stage stage = (Stage) cancelButton.getScene().getWindow();
                     stage.setTitle("Hello World");
-                    stage.setScene(new Scene(root, 660, 469));
+                    stage.setScene(new Scene(root, 600, 400));
                     stage.show();
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -108,15 +107,19 @@ public class LoginStudentController {
         }
     }
 
-    public void BackButton (ActionEvent event) {
+    public void ButtonBackOnAction(ActionEvent event) {
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("LoginScreen.fxml"));
-            Stage stage = (Stage) BackButton.getScene().getWindow();
-            stage.setTitle("Login");
+            Parent root = FXMLLoader.load(getClass().getResource("MainPage.fxml"));
+            Stage stage = (Stage) ButtonBack.getScene().getWindow();
+            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
-            System.out.println("Fail");
+            e.printStackTrace();
+            e.getCause();
         }
     }
+
+
+
 }
