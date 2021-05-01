@@ -5,14 +5,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.MainPageController">
+<AnchorPane fx:id="anchor" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.MainPageController">
    <children>
-      <Label layoutX="142.0" layoutY="30.0" text="main page">
+      <Label layoutX="181.0" layoutY="30.0" text="Main Page">
          <font>
             <Font size="51.0" />
          </font>
       </Label>
-      <Button fx:id="ButtonStudent" layoutX="222.0" layoutY="123.0" mnemonicParsing="false" onAction="#ButtonStudentOnAction" prefHeight="36.0" prefWidth="78.0" text="Student" />
-      <Button fx:id="ButtonTeacher" layoutX="222.0" layoutY="236.0" mnemonicParsing="false" onAction="#ButtonTeacherOnAction" prefHeight="36.0" prefWidth="78.0" text="Teacher" />
+      <Button fx:id="ButtonStudent" layoutX="176.0" layoutY="182.0" mnemonicParsing="false" onAction="#ButtonStudentOnAction" prefHeight="36.0" prefWidth="78.0" text="Student" />
+      <Button fx:id="ButtonTeacher" layoutX="420.0" layoutY="183.0" mnemonicParsing="false" onAction="#ButtonTeacherOnAction" prefHeight="36.0" prefWidth="78.0" text="Teacher" />
+      <Label layoutX="176.0" layoutY="148.0" text="Please Choose Who You're Logging In As">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>

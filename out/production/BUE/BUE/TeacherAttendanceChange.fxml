@@ -5,7 +5,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="469.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherAttendanceChangeController">
+<AnchorPane fx:id="anchor" prefHeight="469.0" prefWidth="660.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BUE.TeacherAttendanceChangeController">
    <children>
       <ImageView fitHeight="100.0" fitWidth="314.0" layoutX="54.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -17,7 +17,7 @@
             <Image url="@BUEPictures/AttendanceChange2.PNG" />
          </image>
       </ImageView>
-      <Button fx:id="ButtonSubmit" layoutX="247.0" layoutY="200.0" mnemonicParsing="false" onAction="#ButtonSubmitOnAction" prefHeight="34.0" prefWidth="97.0" text="Submit" />
-      <Button fx:id="ButtonBack" layoutX="526.0" layoutY="397.0" mnemonicParsing="false" onAction="#TeacherBackOnAction" text="Button" />
+      <Button fx:id="ButtonSubmit" layoutX="247.0" layoutY="200.0" mnemonicParsing="false" onAction="#ButtonSubmitOnAction" prefHeight="34.0" prefWidth="97.0" style="-fx-background-color: white;" text="Submit" />
+      <Button fx:id="ButtonBack" layoutX="526.0" layoutY="397.0" mnemonicParsing="false" onAction="#TeacherBackOnAction" prefHeight="34.0" prefWidth="59.0" style="-fx-background-color: white;" text="Back" />
    </children>
 </AnchorPane>

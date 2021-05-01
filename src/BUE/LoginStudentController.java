@@ -39,7 +39,7 @@ public class LoginStudentController {
             Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
             Stage stage = new Stage();
             stage.setTitle("Hello World");
-            stage.setScene(new Scene(root, 600, 400));
+            stage.setScene(new Scene(root, 660, 469));
             stage.show();
         }catch (Exception e){
             e.printStackTrace();
