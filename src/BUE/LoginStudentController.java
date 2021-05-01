@@ -76,7 +76,7 @@ public class LoginStudentController {
         String DBEmail = "";
         String DBPassword = "";
 
-        try (PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Users WHERE Email=(?) AND Password=(?)")) {
+        try (PreparedStatement stmt = conn.prepareStatement("SELECT * FROM Users WHERE ID=(?) AND Password=(?)")) {
 
             stmt.setString(1, email);
             stmt.setString(2, password);
@@ -84,7 +84,7 @@ public class LoginStudentController {
             ResultSet rs = stmt.executeQuery();
 
             while (rs.next()) {
-                DBEmail = rs.getString("Email");
+                DBEmail = rs.getString("ID");
                 DBPassword = rs.getString("Password");
             }
 

@@ -14,11 +14,11 @@
             <Font size="52.0" />
          </font>
       </Label>
-      <TextField fx:id="EmailTextField" layoutX="255.0" layoutY="156.0" promptText="Email" />
+      <TextField fx:id="EmailTextField" layoutX="255.0" layoutY="156.0" promptText="00001" />
       <PasswordField fx:id="passwordTextField" layoutX="255.0" layoutY="198.0" promptText="Password" />
       <Button fx:id="loginButton" layoutX="195.0" layoutY="244.0" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="25.0" prefWidth="209.0" text="Login" />
       <Button fx:id="cancelButton" layoutX="195.0" layoutY="285.0" mnemonicParsing="false" onAction="#cancelButtonOnAction" prefHeight="25.0" prefWidth="209.0" text="Cancel" />
-      <Label layoutX="218.0" layoutY="156.0" prefHeight="25.0" prefWidth="37.0" text="Email: " />
+      <Label layoutX="195.0" layoutY="156.0" prefHeight="25.0" prefWidth="60.0" text="Student ID:" />
       <Label layoutX="195.0" layoutY="198.0" prefHeight="25.0" prefWidth="60.0" text="Password: " />
       <Label fx:id="errorMessage" alignment="CENTER" layoutX="195.0" layoutY="223.0" prefHeight="17.0" prefWidth="209.0" textFill="RED" />
       <Button fx:id="ButtonBack" layoutX="475.0" layoutY="348.0" mnemonicParsing="false" onAction="#ButtonBackOnAction" text="back" />
