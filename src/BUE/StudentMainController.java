@@ -25,7 +25,6 @@ public class StudentMainController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("StudentQRScanner.fxml"));
             Stage stage = (Stage) QRButton.getScene().getWindow();
-            stage.setTitle("QR Scanner");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -37,7 +36,6 @@ public class StudentMainController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginStudent.fxml"));
             Stage stage = (Stage) LogoutButton.getScene().getWindow();
-            stage.setTitle("Student Login");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

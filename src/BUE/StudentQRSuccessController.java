@@ -17,7 +17,6 @@ public class StudentQRSuccessController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("StudentMain.fxml"));
             Stage stage = (Stage) BackButton.getScene().getWindow();
-            stage.setTitle("Student Main");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

@@ -17,7 +17,6 @@ public class TeacherQRGenerateController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonFinish.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

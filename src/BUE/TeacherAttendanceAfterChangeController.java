@@ -19,7 +19,6 @@ public class TeacherAttendanceAfterChangeController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonTeacherBack.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -33,7 +32,6 @@ public class TeacherAttendanceAfterChangeController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherExport.fxml"));
             Stage stage = (Stage) ButtonTeacherExportPDF.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

@@ -38,7 +38,6 @@ public class TeacherLectureController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherAttendance.fxml"));
             Stage stage = (Stage) ButtonTeacherViewAttendance.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -51,7 +50,6 @@ public class TeacherLectureController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherMain.fxml"));
             Stage stage = (Stage) ButtonTeacherLectureBack.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -70,7 +68,6 @@ public class TeacherLectureController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("TeacherQRGenerate.fxml"));
             Stage stage = (Stage) ButtonTeacherLectureQRCode.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

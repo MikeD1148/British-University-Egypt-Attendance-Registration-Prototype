@@ -19,7 +19,6 @@ public class MainPageController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginTeacher.fxml"));
             Stage stage = (Stage) ButtonTeacher.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -32,7 +31,6 @@ public class MainPageController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginStudent.fxml"));
             Stage stage = (Stage) ButtonStudent.getScene().getWindow();
-            stage.setTitle("Hello World");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {

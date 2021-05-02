@@ -34,7 +34,6 @@ public class TeacherMainController {
         try {
             Parent root = FXMLLoader.load(getClass().getResource("LoginTeacher.fxml"));
             Stage stage = (Stage) ButtonTeacherMainLogout.getScene().getWindow();
-            stage.setTitle("Teacher Login");
             stage.setScene(new Scene(root, 660, 469));
             stage.show();
         } catch (Exception e) {
@@ -47,7 +46,6 @@ public class TeacherMainController {
         try{
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonLecture1.getScene().getWindow();
-            stage.setTitle("Teacher Lecture");
             stage.setScene((new Scene(root,660,469)));
             stage.show();
         } catch (Exception e){
@@ -60,7 +58,6 @@ public class TeacherMainController {
         try{
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonLecture2.getScene().getWindow();
-            stage.setTitle("Teacher Lecture");
             stage.setScene((new Scene(root,660,469)));
             stage.show();
         } catch (Exception e){
@@ -73,7 +70,6 @@ public class TeacherMainController {
         try{
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonLecture3.getScene().getWindow();
-            stage.setTitle("Teacher Lecture");
             stage.setScene((new Scene(root,660,469)));
             stage.show();
         } catch (Exception e){
@@ -86,7 +82,6 @@ public class TeacherMainController {
         try{
             Parent root = FXMLLoader.load(getClass().getResource("TeacherLecture.fxml"));
             Stage stage = (Stage) ButtonLecture4.getScene().getWindow();
-            stage.setTitle("Teacher Lecture");
             stage.setScene((new Scene(root,660,469)));
             stage.show();
         } catch (Exception e){
